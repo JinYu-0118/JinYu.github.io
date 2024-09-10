@@ -1,0 +1,1799 @@
+* {
+  margin: auto; /* Set default margin for all elements */
+  padding: 0;   /* Set default padding for all elements */
+}
+
+/* Global Styles and Scrollbar Customization
+  This section defines default styling for all elements and customizes the appearance of the scrollbar.*/
+
+*::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; /* Add shadow effect inside the scrollbar track */
+  border-radius: 10px;            /* Round the corners of the scrollbar track */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: red;         /* Set the color of the scrollbar thumb */
+  border-radius: 10px;     /* Round the corners of the scrollbar thumb */
+}
+
+
+/* Body and Header Styles
+  This section sets the default styles for the body and h1 headers. */
+body {
+  background-color: gold;                /* Set the background color of the page */
+  color: white;                          /* Set the default font color */
+  font-size: 23px;                       /* Set the default font size */
+  font-family: 'Times New Roman', Times, serif; /* Set the default font type */
+}
+
+h1 {
+  font-size: 130px; /* Set font size for h1 headers */
+  text-align: center; /* Center-align the text for h1 headers */
+  padding-top: 20px; /* Add padding to the top of h1 headers */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow effects */
+  -webkit-text-stroke-width: 2px; /* Set the width of the text stroke */
+  -webkit-text-stroke-color: gold; /* Set the color of the text stroke */
+  color: white; /* Set the font color for h1 headers */
+}
+
+/* Navigation Bar Styles
+  This section styles the navigation bar, including the background image, text alignment, and link appearances.*/
+nav{
+	height: 170px;
+  	text-align: center; /*align the navigation bar in the middle*/
+ 	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),
+	url(Images/Grass.png); /*set the background color of the navigation bar*/
+	background-size: 100% 100%;
+}
+
+nav ul{
+  	list-style-type: none; /*cancel the dot beside the hypertext reference*/
+  	display: inline-flex; /*allow the ul in the center of navigation bar*/
+}
+
+nav ul li {
+	height: 170px;
+  	display: inline-block;/*align the menu horizontally*/
+}
+
+nav a {
+  font-size: 50px; /* Set font size for hyperlinks in the navigation bar */
+  text-decoration: none; /* Remove underline from hyperlinks */
+  color: black; /* Set the font color for hyperlinks to black */
+  font-weight: bold; /* Make the font weight bold for hyperlinks */
+  padding-left: 30px; /* Add padding to the left of the hyperlinks */
+  padding-right: 30px; /* Add padding to the right of the hyperlinks */
+  -webkit-text-stroke-width: 3px; /* Set the width of the text stroke */
+  -webkit-text-stroke-color: white; /* Set the color of the text stroke */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set the font family for hyperlinks */
+}
+
+nav ul li :hover{
+  padding-bottom: 150px; /* Add padding at the bottom on hover */
+  background-size: 100px 100px; /* Set the size of the background image */
+	background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+	background-image: url(Images/gif/pikachuRunning.gif); /* Set the background image on hover */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow effects */
+  color: gold; /* Change font color to gold on hover */
+}
+
+nav ul li a:visited {
+  color: white; /* Set the color of visited links to white */
+  -webkit-text-stroke-color: black; /* Change text stroke color for visited links */
+}
+
+nav ul li a:visited:hover {
+  color: gold; /* Change font color to gold when hovering over visited links */
+}
+
+nav ul li a:active {
+  opacity: 0.8; /* Apply 20% transparency when the link is clicked */
+}
+
+/* Audio Player Styles
+  This section styles the audio player, including the appearance of media controls. */
+.Audio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Images/Background1.png); /* Set background image with a dark gradient overlay */
+  color: white; /* Set font color to white */
+  padding-bottom: 10px; /* Add padding to the bottom */
+}
+
+audio {
+  margin: auto; /* Center the audio player */
+  display: block; /* Display the audio player as a block element */
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: gold; /* Set the background color of the media controls panel */
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button {
+  background-color: red; /* Set the background color for play and mute buttons */
+  border-radius: 50%; /* Make the play and mute buttons round */
+}
+
+audio::-webkit-media-controls-play-button:hover,
+audio::-webkit-media-controls-mute-button:hover {
+  opacity: 0.8; /* Reduce opacity to 80% on hover for play and mute buttons */
+}
+
+audio::-webkit-media-controls-play-button:active,
+audio::-webkit-media-controls-mute-button:active {
+  opacity: 0.6; /* Reduce opacity to 60% when play and mute buttons are clicked */
+}
+
+/* Header Styles
+  This section styles various headers, including background images and height. */
+.indexHeader,
+.ConceptHeader,
+.GameHeader,
+.ShopHeader,
+.PokedexHeader,
+.AboutUsHeader {
+  background-size: 100% 100%; /* Scale background image to cover the entire element */
+  height: 200px; /* Set the height of the header elements */
+}
+
+.indexHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/Index/Index.png); /* Set the specific background image for the index header */
+}
+
+.ConceptHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/Concept/Concept.png); /* Set the specific background image for the concept header */
+}
+
+.GameHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/Games/Game.png); /* Set the specific background image for the game header */
+}
+
+.ShopHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/Shop/shop.png); /* Set the specific background image for the shop header */
+}
+
+.PokedexHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/PokedexBackground.png); /* Set the specific background image for the Pokedex header */
+}
+
+.AboutUsHeader {
+  background-image: 
+    radial-gradient(rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Apply a radial gradient from black to transparent */
+    url(Images/AboutUs/AboutUs.png); /* Set the specific background image for the About Us header */
+}
+
+/* Index Section Styles
+  This section styles the Index section, including background, height, and text appearances.*/
+.Index {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Apply a linear gradient for darkening the background */
+    url(Images/Background1.png); /* Set the background image for the Index section */
+  height: 200px; /* Set the height of the Index section */
+}
+
+.Index h2 {
+  color: white; /* Set the font color to white */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color of the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+  font-size: 80px; /* Set the font size for h2 elements */
+  text-align: center; /* Center-align the text */
+  padding-top: 20px; /* Add padding to the top */
+}
+
+.Index h3 {
+  color: white; /* Set the font color to white */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color of the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+  font-size: 60px; /* Set the font size for h3 elements in Index section*/
+  text-align: center; /* Center-align the text */
+  padding-top: 5px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+.IndexConcept {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Apply a linear gradient for darkening the background */
+    url(Images/Background2.png); /* Set the background image for the IndexConcept section */
+  height: 870px; /* Set the height of the IndexConcept section */
+}
+
+.IndexConcept a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color to black */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color of the link text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the link text */
+}
+
+.IndexConcept h2 {
+  font-size: 80px; /* Set the font size for h2 elements in the IndexConcept section */
+  text-align: center; /* Center-align the text */
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+.IndexConcept video {
+  width: 80%; /* Set the width of video elements to 80% of their container */
+  display: block; /* Display the video as a block element */
+  margin: auto; /* Center the video horizontally */
+}
+
+.IndexGame {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Apply a dark overlay using a linear gradient */
+    url(Images/Background1.png); /* Set the background image for the IndexGame section */
+  height: 530px; /* Set the height of the IndexGame section */
+}
+
+.IndexGame a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color to black */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for a glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color for the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+}
+
+.IndexGame h2 {
+  text-align: center; /* Center-align the text */
+  font-size: 80px; /* Set the font size for h2 elements */
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+/* NowOnSale Section Styles
+  This section styles the NowOnSale section, including link appearances and header text.*/
+.NowOnSale a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color to black */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for a glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color for the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+}
+
+.NowOnSale h2 {
+  text-align: center; /* Center-align the text */
+  font-size: 80px; /* Set the font size for h2 elements in NowOnSale section */
+}
+
+/* IndexPokedex Section Styles
+  This section styles the IndexPokedex area, including background, link appearances, header text, and images.*/
+.IndexPokedex {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), /* Apply a darker linear gradient overlay */
+    url(Images/Background1.png); /* Set the background image for the IndexPokedex section */
+  height: 540px; /* Set the height of the IndexPokedex section */
+}
+
+.IndexPokedex a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color to black */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for a glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color for the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+}
+
+.IndexPokedex h2 {
+  font-size: 80px; /* Set the font size for h2 elements in IndexPokedex section*/
+  text-align: center; /* Center-align the text */
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+.IndexPokedex img {
+  width: 50%; /* Set the image width to 50% of the container */
+  display: block; /* Display the image as a block element */
+  margin: auto; /* Center the image horizontally */
+}
+
+/* IndexAboutUs Section Styles
+  This section styles the IndexAboutUs area, including background, link appearances, header text, and images.*/
+.IndexAboutUs {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Apply a dark overlay using a linear gradient */
+    url(Images/Background2.png); /* Set the background image for the IndexAboutUs section */
+  background-size: 100% 100%; /* Stretch the background image to cover the entire container */
+  height: 780px; /* Set the height of the IndexAboutUs section */
+}
+
+.IndexAboutUs a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Set the link color to black */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow for a glowing effect */
+  -webkit-text-stroke-color: gold; /* Set the stroke color for the text */
+  -webkit-text-stroke-width: 2px; /* Set the stroke width of the text */
+}
+
+.IndexAboutUs h2 {
+  font-size: 80px; /* Set the font size for h2 elements in IndexAboutUs section*/
+  text-align: center; /* Center-align the text */
+  padding-top: 30px; /* Add padding to the top */
+  padding-bottom: 30px; /* Add padding to the bottom */
+}
+
+.IndexAboutUs img {
+  width: 50%; /* Set image width to 50% of its container */
+  display: block; /* Display the image as a block element */
+  margin: auto; /* Center the image horizontally */
+}
+
+/* Link States for Various Sections
+  These styles manage the appearance of links in different sections when visited, hovered, or active.*/
+
+/* Change color of visited links to white */
+.IndexConcept a:visited,
+.IndexGame a:visited,
+.IndexPokedex a:visited,
+.IndexAboutUs a:visited {
+  color: white;
+}
+
+/* Change color to gold and adjust text stroke on hover */
+.IndexConcept a:hover,
+.IndexGame a:hover,
+.NowOnSale a:hover,
+.IndexPokedex a:hover,
+.IndexAboutUs a:hover {
+  color: gold; /* Change color to gold on hover */
+  -webkit-text-stroke-color: black; /* Set stroke color to black on hover */
+}
+
+/* Reduce opacity when the link is active (clicked) */
+.IndexConcept a:active,
+.IndexGame a:active,
+.IndexPokedex a:active,
+.IndexAboutUs a:active {
+  opacity: 0.8; /* Reduce opacity when active */
+}
+
+/* Styling for square and rectangular elements
+  These styles set dimensions and shadow effects for square and rectangular elements.*/
+.square {
+  margin: 15px 10px; /* In square section, set margin 15px for heigh; set margin 10px for width. */
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8), 0 10px 10px 0 rgba(0, 0, 0, 0.4); /* Add shadow effect */
+  height: 300px; /* Set height */
+  width: 300px; /* Set width */
+}
+
+.Rectangle {
+  margin: 15px 10px;  /* In Rectangle section, set margin 15px for heigh; set margin 10px for width. */
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8), 0 10px 10px 0 rgba(0, 0, 0, 0.4); /* Add shadow effect */
+  height: 292.5px; /* Set height */
+  width: 180px; /* Set width */
+}
+
+/* Styling for IndexZA section
+  This style sets dimensions and margin for the IndexZA section.*/
+.IndexZA {
+  margin: 15px 10px;  /* In IndexZA section, set margin 15px for heigh; set margin 10px for width. */
+  height: 240px; /* Set height */
+  width: 450px; /* Set width */
+}
+
+/* Styling for Generation section
+  This style sets the background, dimensions, and text properties for the Generation section.*/
+
+/* Generation section styling */
+.Generation {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* Apply a dark overlay using a linear gradient */
+    url(Images/Games/GrassTreeBackground.png); /* Set background image with gradient */
+  height: 150px; /* Set height */
+}
+
+/* Styling for h2 elements within the Generation section */
+.Generation h2 {
+  font-size: 70px; /* Set font size */
+  padding-top: 30px; /* Add padding to the top */
+  text-align: center; /* Center-align text */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow */
+  -webkit-text-stroke-color: gold; /* Set stroke color to gold */
+  -webkit-text-stroke-width: 2px; /* Set stroke width */
+}
+
+/* Styling for images within the Generation section */
+.Generation img {
+  position: absolute; /* Position image absolutely */
+}
+
+/*Styling for ComingSoon section
+  This style sets the background, dimensions, and text properties for the ComingSoon section.*/
+
+	/* ComingSoon section styling */
+.ComingSoon {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url(Images/Games/GrassTreeBackground.png); /* Set background image with gradient */
+  height: 150px; /* Set height */
+}
+
+/* Styling for h2 elements within the ComingSoon section */
+.ComingSoon h2 {
+  font-size: 70px; /* Set font size */
+  padding-top: 10px; /* Add padding to the top */
+  text-align: center; /* Center-align text */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow */
+  -webkit-text-stroke-color: gold; /* Set stroke color to gold */
+  -webkit-text-stroke-width: 2px; /* Set stroke width */
+}
+
+/* Styling for h3 elements within the ComingSoon section */
+.ComingSoon h3 {
+  font-size: 40px; /* Set font size */
+  text-align: center; /* Center-align text */
+  text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Add text shadow */
+  -webkit-text-stroke-color: gold; /* Set stroke color to gold */
+  -webkit-text-stroke-width: 1px; /* Set stroke width */
+}
+
+/* Styling for images within the ComingSoon section */
+.ComingSoon img {
+  position: absolute; /* Position image absolutely */
+}
+
+/* Styling for LeftGif elements */
+.LeftGif {
+  height: 120px; /* Set height */
+  width: 120px; /* Set width */
+  padding-left: 370px; /* Add padding to the left */
+  padding-top: 10px; /* Add padding to the top */
+}
+
+/* Styling for RightGif elements */
+.RightGif {
+  height: 120px; /* Set height */
+  width: 120px; /* Set width */
+  padding-left: 970px; /* Add padding to the left */
+  padding-top: 10px; /* Add padding to the top */
+}
+
+/* 
+  General styling for sections related to game generations and their images.
+  Includes background settings, font sizes, text alignment, padding, margins, and image positioning.
+*/
+
+/* Styling for game generations with right-aligned backgrounds */
+.RedGreen,
+.GoldSilver,
+.Remake2,
+.DiamondPearl,
+.Remake4,
+.Black2White2,
+.SunMoon,
+.SwordShield,
+.ScarletViolet {
+  background-image: 
+    linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)),  /* Apply a dark overlay using a linear gradient */
+    url(Images/Games/BattleGrassBackgroundRight.png); /* Set background image with gradient */
+  background-size: 100% 100%; /* Cover the entire container with the background */
+  height: 300px; /* Set height */
+  font-size: xx-large; /* Set font size */
+}
+
+/* Styling for h3 elements in the sections above */
+.RedGreen h3,
+.GoldSilver h3,
+.Remake2 h3,
+.DiamondPearl h3,
+.Remake4 h3,
+.Black2White2 h3,
+.SunMoon h3,
+.SwordShield h3,
+.ScarletViolet h3 {
+  padding-top: 40px; /* Add top padding */
+  padding-left: 25px; /* Add left padding */
+}
+
+/* Styling for paragraph elements in the sections above */
+.RedGreen p,
+.GoldSilver p,
+.Remake2 p,
+.DiamondPearl p,
+.Remake4 p,
+.Black2White2 p,
+.SunMoon p,
+.SwordShield p,
+.ScarletViolet p {
+  padding-top: 10px; /* Add top padding */
+  padding-left: 25px; /* Add left padding */
+}
+
+/* Sections with left margin of 890px */
+.Red,
+.Gold,
+.HeartGold,
+.Diamond,
+.Black2,
+.Sun {
+  margin-left: 890px; /* Set left margin */
+}
+
+/* Sections with left margin of 890px */
+.Green,
+.Silver,
+.SoulSilver,
+.Pearl,
+.White2,
+.Moon {
+  margin-left: 1170px; /* Set left margin */
+}
+
+/* 
+  Styling for sections with left-aligned backgrounds.
+  Includes background image settings, height, and font size.
+*/
+.Blue,
+.Crystal,
+.Platinum,
+.Arceus,
+.ZA {
+  background-image: 
+    linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0)), 
+    url(Images/Games/BattleGrassBackgroundLeft.png); /* Set background image with gradient */
+  background-size: 100% 100%; /* Cover the entire container with the background */
+  height: 300px; /* Set height */
+  font-size: xx-large; /* Set font size */
+}
+
+/*Styling for sections with right-aligned text.
+  Includes right alignment and padding for headings and paragraphs.*/
+.Blue h3,
+.Crystal h3,
+.Platinum h3,
+.Arceus h3,
+.ZA h3 {
+  text-align: right; /* Align text to the right */
+  padding-top: 40px; /* Add top padding */
+  padding-right: 25px; /* Add right padding */
+}
+
+.Blue p,
+.Crystal p,
+.Platinum p,
+.Arceus p,
+.ZA p {
+  text-align: right; /* Align text to the right */
+  padding-top: 10px; /* Add top padding */
+  padding-right: 25px; /* Add right padding */
+}
+
+.Blue img,
+.Crystal img,
+.Platinum img {
+  margin-left: 30px; /* Set left margin */
+}
+
+.Yellow,
+.Emerald {
+  background-image: 
+    linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), 
+    url(Images/Games/BattleGrassBackgroundRight.png); /* Set background image with gradient */
+  background-size: 100% 100%; /* Cover the entire container with the background */
+  height: 300px; /* Set height */
+  font-size: xx-large; /* Set font size */
+}
+
+.Yellow h3,
+.Emerald h3 {
+  text-align: left; /* Align text to the left */
+  padding-top: 40px; /* Add top padding */
+  padding-left: 25px; /* Add left padding */
+}
+
+.Yellow p,
+.Emerald p {
+  text-align: left; /* Align text to the left */
+  padding-top: 10px; /* Add top padding */
+  padding-left: 25px; /* Add left padding */
+}
+
+.Yellow img,
+.Emerald img {
+  margin-left: 1170px; /* Set left margin */
+}
+
+/* Styling for sections with a left-aligned background gradient and image.
+  Includes background settings, text alignment, and padding.*/
+.Remake1,
+.RubySapphire,
+.Remake3,
+.BlackWhite,
+.XY,
+.UltraSunUltraMoon {
+  background-image: 
+    linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0)), 
+    url(Images/Games/BattleGrassBackgroundLeft.png); /* Set background image with gradient */
+  background-size: 100% 100%; /* Cover the entire container with the background */
+  height: 300px; /* Set height */
+  font-size: xx-large; /* Set font size */
+}
+
+.Remake1 h3,
+.RubySapphire h3,
+.Remake3 h3,
+.BlackWhite h3,
+.XY h3,
+.UltraSunUltraMoon h3 {
+	text-align: right; /* Aligns heading text to the right */
+	padding-top: 40px; /* Adds top padding of 40px */
+	padding-right: 25px; /* Adds right padding of 25px */
+}
+
+.Remake1 p,
+.RubySapphire p,
+.Remake3 p,
+.BlackWhite p,
+.XY p,
+.UltraSunUltraMoon p {
+	text-align: right; /* Aligns paragraph text to the right */
+	padding-top: 10px; /* Adds top padding of 10px */
+	padding-right: 25px; /* Adds right padding of 25px */
+}
+
+/* Styling for sections with specific left margins.
+  Adjust margins for different sections.*/
+.FireRed,
+.Ruby,
+.OmegaRuby,
+.Black,
+.X,
+.UltraSun {
+	margin-left: 25px; /* Adds left margin of 25px */
+}
+
+.LeafGreen,
+.Sapphire,
+.AlphaSapphire,
+.White,
+.Y,
+.UltraMoon {
+	margin-left: 300px; /* Adds left margin of 300px */
+}
+
+/*Styling for image elements across various sections.
+  Includes shadow effect, absolute positioning, and size.*/
+.RedGreen img,
+.Blue img,
+.Yellow img,
+.Remake1 img,
+.GoldSilver img,
+.Crystal img,
+.Remake2 img,
+.RubySapphire img,
+.Emerald img,
+.Remake3 img,
+.DiamondPearl img,
+.Platinum img,
+.BlackWhite img,
+.Black2White2 img,
+.XY img,
+.SunMoon img,
+.UltraSunUltraMoon img {
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8), 0 10px 10px 0 rgba(0, 0, 0, 0.4); /* Adds shadow effect */
+	position: absolute; /* Positions the image absolutely*/
+	margin-top: 25px; /* Adds top margin of 25px */
+	height: 250px; /* Sets height to 250px */
+	width: 250px; /* Sets width to 250px */
+}
+
+.Remake4 img,
+.SwordShield img,
+.Arceus img,
+.ScarletViolet img {
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8), 0 10px 10px 0 rgba(0, 0, 0, 0.4); /* Adds shadow effect */
+	position: absolute; /* Positions the image absolutely*/
+	margin-top: 25px; /* Adds top margin of 25px */
+	height: 243.75px; /* Sets height to 243.75px */
+	width: 150px; /* Sets width to 150px */
+}
+
+/* Margin settings for specific sections.*/
+.BrilliantDiamond,
+.Sword,
+.Scarlet {
+	margin-left: 1080px; /* Adds left margin of 1080px */
+}
+
+.ShiningPearl,
+.Shield,
+.Violet {
+	margin-left: 1250px; /* Adds left margin of 1250px */
+}
+
+/*Specific styling for Arceus images.*/
+.Arceus img {
+	margin-left: 100px; /* Adds left margin of 100px to Arceus images */
+}
+
+/*Specific styling for ZA images.*/
+.ZA img {
+	position: absolute; /* Positions the image absolutely */
+	margin-top: 20px; /* Adds top margin of 20px */
+	margin-left: 20px; /* Adds left margin of 20px */
+	height: 240px; /* Sets height to 240px */
+	width: 450px; /* Sets width to 450px */
+}
+
+/*Styling for ItemBox1, ItemBox2, ItemBox3, and ItemBox4 sections.*/
+.ItemBox1,
+.ItemBox2,
+.ItemBox3,
+.ItemBox4 {
+	position: absolute; /* Positions the ItemBox1,ItemBox2,ItemBox3 and ItemBox4 section absolutely */
+	background-color: white; /* Sets background color to white */
+	border-width: 2px; /* Sets border width to 2px */
+	border-style: solid; /* Sets border style to solid */
+	border-color: black; /* Sets border color to black */
+	border-radius: 10px; /* Rounds the corners with a radius of 10px */
+	height: 650px; /* Sets height to 650px */
+	width: 300px; /* Sets width to 300px */
+	background-color: lightgray; /* Sets background color to light gray */
+}
+
+/*Adds shadow effect to ItemBox and consoleBox elements on hover.*/
+.ItemBox1:hover,
+.ItemBox2:hover,
+.ItemBox3:hover,
+.ItemBox4:hover,
+.consoleBox1:hover,
+.consoleBox2:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39); /* Adds shadow effect on hover */
+}
+
+/*Styling for consoleBox1 and consoleBox2 sections.*/
+.consoleBox1,
+.consoleBox2 {
+	position: absolute; /* Positions the console box absolutely*/
+	background-color: white; /* Sets background color to white */
+	border-width: 2px; /* Sets border width to 2px */
+	border-style: solid; /* Sets border style to solid */
+	border-color: black; /* Sets border color to black */
+	border-radius: 5%; /* Rounds the corners with a radius of 5% */
+	height: 650px; /* Sets height to 650px */
+	width: 500px; /* Sets width to 500px */
+	background-color: lightgray; /* Sets background color to light gray */
+}
+
+/* Styling for ItemBox elements with margin adjustments.*/
+.ItemBox1 {
+	margin-left: 30px; /* Adds left margin of 30px */
+}
+
+.ItemBox2,
+.consoleBox1 {
+	margin-left: 400px; /* Adds left margin of 400px */
+}
+
+.consoleBox2 {
+	margin-left: 930px; /* Adds left margin of 930px */
+}
+
+.ItemBox3 {
+	margin-left: 750px; /* Adds left margin of 750px */
+}
+
+.ItemBox4 {
+	margin-left: 1130px; /* Adds left margin of 1130px */
+}
+
+/*Styling for ItemGrid elements with background image and gradient overlay.*/
+.ItemGrid1,
+.ItemGrid2,
+.ItemGrid3,
+.ItemGrid4 {
+	padding-top: 100px; /* Adds top padding of 100px */
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Adds a dark gradient overlay */
+		url(Images/Background1.png); /* Sets background image */
+	background-size: 100% 100%; /* Scales the background image to cover the entire element */
+	height: 700px; /* Sets height to 700px */
+}
+
+/*Styling for game elements with specified dimensions and padding.*/
+.game {
+	padding-top: 15px; /* Adds top padding of 15px */
+	padding-left: 12px; /* Adds left padding of 12px */
+	height: 444px; /* Sets height to 444px */
+	width: 274px; /* Sets width to 274px */
+}
+
+/*Styling for consoleBox images with padding and dimensions.*/
+.consoleBox1 img,
+.consoleBox2 img {
+	padding-top: 90px; /* Adds top padding of 90px */
+	padding-left: 20px; /* Adds left padding of 20px */
+	height: 274px; /* Sets height to 274px */
+	width: 444px; /* Sets width to 444px */
+}
+
+
+/*Styling for headings within ItemBox and consoleBox elements.*/
+.ItemBox1 h3,
+.ItemBox2 h3,
+.ItemBox3 h3,
+.ItemBox4 h3,
+.consoleBox1 h3,
+.consoleBox2 h3 {
+	color: black; /* Sets text color to black */
+	text-align: center; /* Centers text alignment */
+}
+
+/*Styling for headings within consoleBox elements.*/
+.consoleBox1 h3,
+.consoleBox2 h3 {
+	padding-top: 90px; /* Adds top padding of 90px */
+}
+
+/*Styling for paragraphs within ItemBox and consoleBox elements.*/
+.ItemBox1 p,
+.ItemBox2 p,
+.ItemBox3 p,
+.ItemBox4 p,
+.consoleBox1 p,
+.consoleBox2 p {
+	color: black; /* Sets text color to black */
+	text-align: center; /* Centers text alignment */
+	padding-top: 5px; /* Adds top padding of 5px */
+}
+
+/*Styling for h4 elements with positioning and visual effects.*/
+h4 {
+	text-align: center; /* Centers text alignment */
+	background-color: red; /* Sets background color to red */
+	padding: 20px; /* Adds 20px padding on all sides */
+	position: absolute; /* Positions the element absolutely within the nearest positioned ancestor */
+	right: 20px; /* Positions the element 20px from the right edge */
+	left: 20px; /* Positions the element 20px from the left edge */
+	bottom: 10px; /* Positions the element 10px from the bottom edge */
+	border-radius: 20px; /* Rounds the corners with a radius of 20px */
+}
+
+/*Styling for h4 elements when hovered or clicked.*/
+h4:hover {
+	opacity: 0.8; /* Reduces opacity to 0.8 on hover */
+}
+
+h4:active {
+	opacity: 0.6; /* Reduces opacity to 0.6 when active (clicked) */
+}
+
+/*Styling for the ConceptTrailer element.*/
+.ConceptTrailer {
+	position: absolute; /* Positions the element absolutely within the nearest positioned ancestor */
+	width: 50%; /* Sets width to 50% of the containing element */
+	margin-top: 30px; /* Adds top margin of 30px */
+	margin-left: 370px; /* Adds left margin of 370px */
+}
+
+/*Styling for .Current elements with background images and hover effects.*/
+.CurrentAboutUs,
+.selection,
+.CurrentShop,
+.CurrentConcept,
+.CurrentPokedex,
+.CurrentGame,
+.CurrentIndex {
+	background-repeat: no-repeat; /* Prevents background image from repeating */
+	background-size: 100px 100px; /* Sets gif image size to 100px heigh and 100px width*/
+	background-position-x: center; /* Centers gif image horizontally */
+	background-position-y: 60px; /* Positions gif image 60px from the top */
+}
+
+.CurrentAboutUs:hover,
+.selection:hover,
+.CurrentShop:hover,
+.CurrentConcept:hover,
+.CurrentPokedex:hover,
+.CurrentGame:hover,
+.CurrentIndex:hover{
+	background-image: url(Images/gif/pikachuRunning.gif);/*Set gif when hover it*/
+}
+
+/*Setting background images for each .Current element.*/
+.CurrentAboutUs{
+	background-image: url(Images/gif/pikachuCute.gif);/*Set gif*/
+}
+
+.CurrentShop{
+	background-image: url(Images/gif/pikachuYummy.gif);/*Set gif*/
+}
+
+.CurrentConcept{
+	background-image: url(Images/gif/pikachuYes.gif);/*Set gif*/
+}
+
+.CurrentIndex{
+	background-image: url(Images/gif/pikachuHello.gif);/*Set gif*/
+}
+
+.CurrentPokedex{
+	background-image: url(Images/gif/pikachuNoNo.gif);/*Set gif*/
+}
+
+.CurrentGame{
+	background-image: url(Images/gif/pikachuBoxing.gif);/*Set gif*/
+}
+
+/*intro section*/
+.intro {
+	background-size: 100% 100%; /* Scales background image to cover the entire element */
+	padding-top: 450px; /* Adds top padding of 450px */
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), /* Adds a dark gradient overlay */
+		url(Images/Background1.png); /* Sets the background image */
+}
+
+.intro p {
+	text-align: center; /* Centers text alignment */
+	font-size: 100px; /* Sets font size to 100px */
+	font-weight: bold; /* Makes text bold */
+	color: black; /* Sets font color to black */
+	text-shadow: 0 0 100px yellow, 0 0 20px gold; /* Adds text shadow with yellow and gold effects */
+	-webkit-text-stroke-width: 1px; /* Adds a text stroke width of 1px for WebKit browsers */
+	-webkit-text-stroke-color: gold; /* Sets text stroke color to gold for WebKit browsers */
+	padding-bottom: 50px; /* Adds bottom padding of 50px */
+}
+
+/*concept section*/
+.concept {
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Adds a semi-transparent gradient overlay */
+		url(Images/Concept/ConceptBackground1.png); /* Sets the background image */
+	background-size: 100% 100%; /* Scales background image to cover the entire element */
+	height: 400px; /* Sets height to 400px */
+}
+
+.concept h2 {
+	position: absolute; /* Positions element absolutely */
+	font-size: 70px; /* Sets font size to 70px */
+	color: rgb(0, 255, 34); /* Sets font color to green */
+	font-weight: bold; /* Makes text bold */
+	padding-top: 150px; /* Adds top padding of 150px */
+	padding-left: 60px; /* Adds left padding of 60px */
+	text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.6); /* Adds text shadow with black color and opacity */
+}
+
+.concept p {
+	padding-right: 25px; /* Adds right padding of 25px */
+	padding-top: 30px; /* Adds top padding of 30px */
+	text-align: right; /* Aligns text to the right */
+	font-size: 30px; /* Sets font size to 30px */
+}
+
+/*development section*/
+.development {
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Adds a darker gradient overlay */
+		url(Images/Concept/ConceptBackground2.png); /* Sets the background image */
+	background-size: 100% 100%; /* Scales background image to cover the entire element */
+	height: 600px; /* Sets height to 600px */
+}
+
+.development h2 {
+	position: absolute; /* Positions element absolutely */
+	font-size: 70px; /* Sets font size to 70px */
+	color: rgb(238, 255, 0); /* Sets font color to yellow */
+	font-weight: bold; /* Makes text bold */
+	padding-top: 90px; /* Adds top padding of 90px */
+	text-shadow: 2px 5px 2px #000000b6; /* Adds text shadow with black color and slight opacity */
+	margin-left: 940px; /* Adds left margin of 940px */
+}
+
+.development p { 
+	position: absolute; /* Positions element absolutely*/
+	font-size: 30px; /* Sets font size to 30px */
+	text-align: left; /* Aligns text to the left */
+	padding-top: 130px; /* Adds top padding of 130px */
+	padding-left: 25px; /* Adds left padding of 25px */
+}
+
+.development img {
+	width: 500px; /* Sets width to 500px */
+	height: 300px; /* Sets height to 300px */
+	margin: 200px 0 0 900px; /* Adds top margin of 200px, bottom and right margin of 0px, left margin of 900px */
+	border-radius: 50px; /* Rounds corners with a radius of 50px */
+	box-shadow: 3px 5px 1px rgba(0, 0, 0, 0.3); /* Adds shadow effect with black color and slight opacity */
+}
+
+/* Styling for the About Game section with background image, centered text, and button-like links. */
+.aboutGame {
+	height: 150px; /* Sets height to 150px */
+	padding-top: 20px; /* Adds top padding of 20px */
+	text-align: center; /* Centers text alignment */
+	padding-bottom: 20px; /* Adds bottom padding of 20px */
+	background-image: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Adds a semi-transparent gradient overlay */
+		url(Images/Background2.png); /* Sets the background image */
+}
+
+.aboutGame h3 {
+	font-size: 40px; /* Sets font size to 40px */
+	text-shadow: 2px 5px 2px rgba(0, 0, 0, 0.4); /* Adds text shadow with black color and slight opacity */
+	color: black; /* Sets font color to black */
+	background: rgba(255, 255, 255, 0.5); /* Adds a semi-transparent white background behind the text */
+	margin-bottom: 45px; /* Adds bottom margin of 45px */
+}
+
+.aboutGame a {
+	text-decoration: none; /* Removes underline from links */
+	color: white; /* Sets link color to white */
+	background-color: red; /* Sets background color of links to red */
+	padding: 13px 35px; /* Adds padding of 13px top/bottom and 35px left/right */
+	font-size: 40px; /* Sets font size to 40px */
+	border-radius: 30px; /* Rounds corners with a radius of 30px */
+	border: 2px solid rgb(173, 40, 40); /* Adds a 2px solid border with a red color */
+	box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3); /* Adds shadow effect with black color and slight opacity */
+}
+
+.aboutGame a:hover {
+	background-color: rgb(223, 34, 34); /* Changes background color on hover */
+	transition: background-color 0.2s; /* Smooth transition effect for background color on hover */
+}
+
+.aboutGame a:active {
+	background-color: rgb(197, 0, 0); /* Changes background color when the link is clicked */
+}
+
+/*Pokedex section*/
+.pokedexContentGen1 {
+	height: 4550px; /* Sets height to 4550px */
+}
+
+.pokedexLogo {
+	height: 100px; /* Sets height to 100px */
+	background-color: black; /* Sets background color to black */
+	padding: 30px 394px 30px 400px; /* Adds padding with specific values to adjust positioning */
+}
+
+.pokedexBar {
+	height: 250px; /* Sets height to 250px */
+	text-align: center; /* Centers text alignment */
+	background-image:
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Adds a semi-transparent gradient overlay */
+		url(Images/Grass.png); /* Sets the background image */
+	background-size: 100% 100%; /* Scales background image to cover the entire element */
+}
+
+.pokedexBar a {
+	padding-left: 20px; /* Adds left padding of 20px */
+	font-size: 40px; /* Sets font size to 40px */
+}
+
+.pokedexBar nav {
+	background-image: none; /* Removes background image from the navigation element */
+}
+
+.pokedexBar h2 {
+	color: white; /* Sets font color to white */
+	font-size: 70px; /* Sets font size to 70px */
+	font-weight: bold; /* Makes text bold */
+	text-align: center; /* Centers text alignment */
+	text-shadow: 5px 5px 10px rgb(0, 0, 0, 0.8); /* Adds text shadow with black color and higher opacity */
+}
+
+.pokedexEndBar{
+	height: 170px;
+  	text-align: center; /*align the navigation bar in the middle*/
+ 	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),/* Adds a semi-transparent gradient overlay */
+	url(Images/Grass.png); /*set the background color of the navigation bar*/
+	background-size: 100% 100%;
+}
+
+.pokedexEndBar a {
+	padding-left: 20px; /* Adds 20px of padding on the left side of anchor tags */
+	font-size: 40px; /* Sets font size of anchor text to 40px */
+}
+
+.pokedexEndBar nav {
+	background-image: none; /* Removes any background image from the navigation element */
+}
+.pokedexEndBar h2{
+	color: white; /*apply white color font*/
+	font-size: 70px;/*apply 70px font size*/
+	font-weight: bold;/*apply bold font*/
+	text-align: center;/*align text to center*/
+	text-shadow: 5px 5px 10px rgb(0, 0, 0,0.8); /*apply shadow effect*/
+}
+
+.selection {
+	background-image: url(Images/gif/PikachuLaugh.gif); /* Sets a background image of a GIF to the element with class 'selection' */
+}
+
+.selection a:hover {
+	background-image: none; /* Removes the background image from the 'selection' element when hovering over an anchor tag within it */
+}
+
+.pokemonBox {
+	border-radius: 10px; /* Rounds the corners of the 'pokemonBox' element with a 10px radius */
+	background-color: lightgray; /* Sets the background color of the 'pokemonBox' element to light gray */
+}
+
+.pokemonBox:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39); /* Adds a shadow effect to the 'pokemonBox' element when hovered over */
+}
+
+.pokemonGrid {
+	padding-top: 50px; /* Adds 50px space at the top of the grid */
+	margin: auto; /* Centers the grid horizontally */
+	width: 1200px; /* Sets the width of the grid to 1200px */
+	color: black; /* Sets the text color within the grid to black */
+	display: grid; /* Changes the display to grid layout */
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); 
+	/* Creates columns that are at least 130px wide, 
+	   and automatically fills the grid with as many columns as can fit, 
+	   with each column growing to fill available space */
+	gap: 10px; /* Adds 10px space between grid items */
+}
+
+
+.pokemonBox img{
+	display: block;/*Remove space below image*/
+	width: 130px; /*add 130px width*/
+	object-fit: cover; /* scale its content to fit the aspect ratio */
+}
+
+.pokemonBox h3, .pokemonBox p{
+	color: black; /*apply black font*/
+	text-align: center; /*align text on center*/
+	margin: 0; /*remove default margin*/
+	padding-top: 5px; /*add 5px space on top*/
+}
+
+/*Compant Section*/
+.Company {
+	padding-left: 3%; /* Add padding on the left side */
+	font-size: 150%; /* Set font size to 150% */
+	text-align: left; /* Align text to the left */
+	height: 400px; /* Set height to 400px */
+	background-image: 
+	linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Gradient from black to transparent */
+	url(Images/AboutUs/CompanyBackground.png); /* Background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.Company h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.Company p {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*CEO section*/
+.CEO {
+	padding-right: 3%; /* Add padding on the right side */
+	font-size: 140%; /* Set font size to 140% */
+	text-align: right; /* Align text to the right */
+	height: 400px; /* Set height to 400px */
+	background-image:  
+	linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0)), /* Gradient from transparent to black */
+	url(Images/AboutUs/TsunekazuIshihara.png); /*Apply background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.CEO h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.CEO h3 {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*Director section*/
+.Director {
+	padding-left: 3%; /* Add padding on the left side */
+	font-size: 140%; /* Set font size to 140% */
+	text-align: left; /* Align text to the left */
+	height: 400px; /* Set height to 400px */
+	background-image:  
+	linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Gradient from black to transparent */
+	url(Images/AboutUs/TakatoUtsunomiya.png); /*Apply background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.Director h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.Director h3 {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*Located section*/
+.Located {
+	padding-right: 3%; /* Add padding on the right side */
+	font-size: 140%; /* Set font size to 140% */
+	text-align: right; /* Align text to the right */
+	height: 400px; /* Set height to 400px */
+	background-image:  
+	linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0)), /* Gradient from transparent to black */
+	url(Images/AboutUs/Office.png); /*Apply background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.Located h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.Located p {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*Philosophy section*/
+.Philosophy {
+	padding-left: 3%; /* Add padding on the left side */
+	font-size: 140%; /* Set font size to 140% */
+	text-align: left; /* Align text to the left */
+	height: 400px; /* Set height to 400px */
+	background-image:  
+	linear-gradient(to right, rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Gradient from black to transparent */
+	url(Images/AboutUs/Philosophy.png); /* Background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.Philosophy h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.Philosophy p {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*Vision section*/
+.Vision {
+	padding-right: 3%; /* Add padding on the right side */
+	font-size: 140%; /* Set font size to 140% */
+	text-align: right; /* Align text to the right */
+	height: 700px; /* Set height to 700px */
+	background-image:  
+	linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0)), /* Gradient from black to transparent */
+	url(Images/AboutUs/Vision.png); /* Background image */
+	background-size: 100% 100%; /* Cover the entire background */
+}
+
+.Vision h2 {
+	padding-top: 7%; /* Add padding on top */
+}
+
+.Vision p {
+	padding-top: 2%; /* Add padding on top */
+}
+
+/*Footer section*/
+footer {
+	text-align: center; /* Center-align the text */
+	background-color: black; /* Set background color to black */
+	overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.PokemonLogo {
+	padding-top: 10px; /* Add padding on top */
+	height: 100px; /* Set height to 100px */
+}
+
+.link {
+	padding-top: 20px; /* Add padding on top */
+	height: 100px; /* Set height to 100px */
+}
+
+.link li {
+	padding: 50px 5px 5px 10px; /* Add padding around list items */
+	display: inline; /* Display list items inline */
+	background-color: white; /* Set background color to white */
+	border-width: 2px; /* Set border width */
+	border-style: solid; /* Set border style to solid */
+	border-color: white; /* Set border color to white */
+	border-radius: 50%; /* Make the border rounded */
+	margin-left: 20px; /* Add margin on the left */
+	margin-right: 20px; /* Add margin on the right */
+}
+
+
+.link img {
+	padding-left: 6px; /* Add padding on the left */
+	padding-right: 6px; /* Add padding on the right */
+	height: 60px; /* Set height to 60px */
+}
+
+.link li:hover {
+	opacity: 0.8; /* Reduce opacity to 80% on hover */
+}
+
+.link li:active {
+	opacity: 0.6; /* Reduce opacity to 60% when clicked */
+}
+
+/* Main Content */
+main {
+	margin: 0; /* Remove margin */
+	padding: 0; /* Remove padding */
+}
+
+/* Pokedex Content Sections */
+.pokedexContentGen1,
+.pokedexContentGen2,
+.pokedexContentGen3,
+.pokedexContentGen4,
+.pokedexContentGen5,
+.pokedexContentGen6,
+.pokedexContentGen7,
+.pokedexContentGen8,
+.pokedexContentGen9 {
+	background-image:
+	linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* Dark overlay gradient */
+	url(Images/Background1.png); /* Background image */
+	background-size: 400px; /* Set background size */
+}
+
+/* Pokedex Content Sections with varying heights */
+.pokedexContentGen2 {
+	width: auto; /* Auto width */
+	height: 3230px; /* Set height to 3200px */
+}
+
+.pokedexContentGen3 {
+	width: auto; /* Auto width */
+	height: 4210px; /* Set height to 4210px */
+}
+
+.pokedexContentGen4 {
+	width: auto; /* Auto width */
+	height: 3480px; /* Set height to 3480px */
+}
+
+.pokedexContentGen5 {
+	width: auto; /* Auto width */
+	height: 4940px; /* Set height to 4940px */
+}
+
+.pokedexContentGen6 {
+	width: auto; /* Auto width */
+	height: 2250px; /* Set height to 2230px */
+}
+
+.pokedexContentGen7 {
+	width: auto; /* Auto width */
+	height: 2730px; /* Set height to 2730px */
+}
+
+.pokedexContentGen8 {
+	width: auto; /* Auto width */
+	height: 2970px; /* Set height to 2950px */
+}
+
+.pokedexContentGen9 {
+	width: auto; /* Auto width */
+	height: 3700px; /* Set height to 3700px */
+}
+
+/* Pokemon Grid Layout for different generations */
+.pokemonGridGen6,
+.pokemonGridGen7,
+.pokemonGridGen8,
+.pokemonGridGen2 {
+	padding: 50px; /* Add padding around the grid */
+	margin: auto; /* Center the grid horizontally */
+	width: 1200px; /* Set width to 1200px */
+	color: black; /* Set text color to black */
+	display: grid; /* Use grid layout */
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Automatically create columns, each at least 130px wide */
+	grid-auto-rows: 1fr; /* Automatically adjust row height */
+	gap: 15px; /* Add 15px space between grid items */
+}
+
+.pokemonGridGen5,
+.pokemonGridGen3,
+.pokemonGridGen8,
+.pokemonGridGen4,
+.pokemonGridGen9 {
+	padding: 50px; /* Add padding around the grid */
+	margin: auto; /* Center the grid horizontally */
+	width: 1220px; /* Set width to 1220px */
+	color: black; /* Set text color to black */
+	display: grid; /* Use grid layout */
+	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Automatically create columns, each at least 130px wide */
+	grid-auto-rows: 1fr; /* Automatically adjust row height */
+	gap: 15px; /* Add 15px space between grid items */
+}
+
+/* Pokemon Type Styles */
+.pokeType2 {
+	display: flex; /* Use flexbox layout */
+	padding: 5px 10px 2px 10px; /* Add padding */
+	font-size: 10.5px; /* Set font size */
+}
+
+.pokeType1 {
+	font-size: 10.5px; /* Set font size */
+	display: flex; /* Use flexbox layout */
+	padding: 4px 0 4px 29px; /* Add padding */
+}
+
+/* Pokemon Box Styles */
+.pokemonBox h3 {
+	padding: 10px 10px 5px 10px; /* Add padding */
+	font-size: 18px; /* Set font size */
+}
+
+.pokemonBox p {
+	font-size: 14px; /* Set font size */
+	padding-bottom: 5px; /* Add padding on bottom */
+}
+
+/* Type-specific Styles */
+.normal, 
+.fire, 
+.water, 
+.grass, 
+.electric, 
+.ice, 
+.fighting, 
+.poison, 
+.ground, 
+.flying, 
+.psychic, 
+.bug, 
+.rock, 
+.ghost, 
+.dragon, 
+.dark, 
+.steel, 
+.fairy {
+	border-radius: 7px; /* Round corners */
+	text-align: center; /* Center text */
+}
+
+/* Psychic Type Background Color */
+.pokeType1 .psychic, .pokeType2 .psychic {
+	background-color: rgb(240, 60, 120); /* Set background color */
+}
+
+/* Dark Type Background Color */
+.pokeType1 .dark, .pokeType2 .dark {
+	background-color: rgb(127, 46, 9); /* Set background color */
+}
+
+/* Steel Type Background Color */
+.pokeType1 .steel, .pokeType2 .steel {
+	background-color: rgb(157, 155, 155); /* Set background color */
+	color: black; /* Set text color */
+}
+
+/* Background colors and text colors for different Pokémon types */
+.pokeType1 .fighting,
+.pokeType2 .fighting {
+	background-color: orange; /* Background color for Fighting type */
+	color: black; /* Text color for Fighting type */
+}
+
+.pokeType1 .fairy,
+.pokeType2 .fairy {
+	background-color: plum; /* Background color for Fairy type */
+	color: black; /* Text color for Fairy type */
+}
+
+.pokeType1 .electric,
+.pokeType2 .electric {
+	background-color: rgb(237, 237, 59); /* Background color for Electric type */
+	color: black; /* Text color for Electric type */
+}
+
+.pokeType1 .ground,
+.pokeType2 .ground {
+	background-color: rgb(161, 161, 28); /* Background color for Ground type */
+}
+
+.pokeType1 .rock,
+.pokeType2 .rock {
+	background-color: rgb(145, 92, 13); /* Background color for Rock type */
+}
+
+.pokeType1 .grass,
+.pokeType2 .grass {
+	background-color: rgb(68, 185, 68); /* Background color for Grass type */
+}
+
+.pokeType1 .normal,
+.pokeType2 .normal {
+	background-color: gray; /* Background color for Normal type */
+}
+
+.pokeType1 .fire,
+.pokeType2 .fire {
+	background-color: rgb(167, 50, 50); /* Background color for Fire type */
+}
+
+.pokeType1 .flying,
+.pokeType2 .flying,
+.pokeType1 .dragon,
+.pokeType2 .dragon {
+	background-color: rgb(148, 73, 185); /* Background color for Flying and Dragon types */
+}
+
+.pokeType1 .ice,
+.pokeType2 .ice {
+	background-color: aqua; /* Background color for Ice type */
+	color: black; /* Text color for Ice type */
+}
+
+.pokeType1 .bug,
+.pokeType2 .bug {
+	background-color: rgb(21, 133, 36); /* Background color for Bug type */
+}
+
+.pokeType1 .ghost,
+.pokeType2 .ghost {
+	background-color: purple; /* Background color for Ghost type */
+}
+
+.pokeType1 .poison,
+.pokeType2 .poison {
+	background-color: rgb(155, 76, 155); /* Background color for Poison type */
+}
+
+.pokeType1 .water,
+.pokeType2 .water {
+	background-color: rgb(8, 163, 224); /* Background color for Water type */
+}
+
+/* Padding adjustments for different Pokémon types in .pokeType2 */
+.pokeType2 .normal {
+	padding: 5px 7px 3px 7px; /* Padding for Normal type */
+}
+
+.pokemonBox img {
+	margin: 0; /* Remove margin from Pokémon box images */
+}
+
+.pokeType2 .psychic,
+.pokeType2 .dragon {
+	padding: 5px 7px 3px 7px; /* Padding for Psychic and Dragon types */
+}
+
+.pokeType2 .fighting,
+.pokeType2 .electric {
+	padding: 6px 6px 3px 6px; /* Padding for Fighting and Electric types */
+}
+
+.pokeType2 .water,
+.pokeType2 .steel,
+.pokeType2 .grass,
+.pokeType2 .ghost {
+	padding: 5px 9px 3px 9px; /* Padding for Water, Steel, Grass, and Ghost types */
+}
+
+.pokeType2 .fairy {
+	padding: 5px 10px 3px 10px; /* Padding for Fairy type */
+}
+
+.pokeType2 .poison,
+.pokeType2 .ground,
+.pokeType2 .flying {
+	padding: 5px 7.5px 3px 7.5px; /* Padding for Poison, Ground, and Flying types */
+}
+
+/* Margin-right adjustments for first Pokémon types */
+.pokeType2 .firstPoison,
+.pokeType2 .firstGrass,
+.pokeType2 .firstWater,
+.pokeType2 .firstGhost,
+.pokeType2 .firstElectric,
+.pokeType2 .firstFire,
+.pokeType2 .firstRock,
+.pokeType2 .firstGround,
+.pokeType2 .firstIce,
+.pokeType2 .firstPsychic,
+.pokeType2 .firstDragon,
+.pokeType2 .firstSteel,
+.pokeType2 .firstFairy,
+.pokeType2 .firstDark,
+.pokeType2 .firstFighting,
+.pokeType2 .firstFlying,
+.pokeType2 .firstNormal {
+	margin-right: 10px; /* Margin-right for first Pokémon types */
+}
+
+.pokeType2 .firstBug{
+	margin-right: 6px; /*Margin right for .pokeType2 .firstBug section*/
+}
+
+.pokeType2 .firstFire .fire {
+	padding: 4px 15px 3px 15px; /* Padding for the first Fire type */
+}
+
+.pokeType2 .firstDark .dark {
+	margin-right: 2px; /* Margin-right for the first Dark type */
+}
+
+.pokeType2 .rock,
+.pokeType2 .dark,
+.pokeType2 .fire {
+	padding: 4px 12px 3px 12px; /* Padding for Rock, Dark, and Fire types */
+}
+
+.pokeType1 .electric,
+.pokeType1 .fighting {
+	padding: 5px 15px 3px 15px; /* Padding for Electric and Fighting types */
+}
+
+.pokeType2 .firstBug {
+	margin-left: 5px; /* Margin-left for the first Bug type */
+}
+
+.pokeType1 .bug,
+.pokeType1 .ice {
+	margin-left: 11px; /* Margin-left for Bug and Ice types */
+	padding: 5px 15px 3px 15px; /* Padding for Bug and Ice types */
+}
+
+.pokeType1 .water,
+.pokeType1 .fairy,
+.pokeType1 .grass,
+.pokeType1 .ghost,
+.pokeType1 .steel {
+	padding: 5px 14px 3px 14px; /* Padding for Water, Fairy, Grass, Ghost, and Steel types */
+	margin-left: 6px; /* Margin-left for Water, Fairy, Grass, Ghost, and Steel types */
+}
+
+.pokeType1 .normal,
+.pokeType1 .poison,
+.pokeType1 .ground,
+.pokeType1 .psychic,
+.pokeType1 .dragon,
+.pokeType1 .flying {
+	padding: 5px 11px 3px 11px; /* Padding for Normal, Poison, Ground, Psychic, Dragon, and Flying types */
+	margin-left: 7px; /* Margin-left for Normal, Poison, Ground, Psychic, Dragon, and Flying types */
+}
+
+/* Padding and margins for specific Pokémon types in .pokeType1 */
+.pokeType1 .fire,
+.pokeType1 .rock,
+.pokeType1 .dark {
+	padding: 5px 20px 4px 20px; /* Padding for Fire, Rock, and Dark types */
+	margin-left: 5px; /* Margin-left for Fire, Rock, and Dark types */
+	margin-top: 2px; /* Margin-top for Fire, Rock, and Dark types */
+}
+
+/* Margin-right for first instances of Ice, Bug, and Steel types in .pokeType2 */
+.pokeType2 .firstIce .ice,
+.pokeType2 .firstBug .bug,
+.pokeType2 .firstSteel .steel {
+	margin-right: 3px; /* Margin-right for first instances of Ice, Bug, and Steel types */
+}
+
+/* Padding adjustments for Ice and Bug types in .pokeType2 */
+.pokeType2 .ice,
+.pokeType2 .bug {
+	padding: 5px 14px 3px 14px; /* Padding for Ice and Bug types */
+}
+
+/* Keyframe animations for marquee effect */
+@keyframes marquee1 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee2 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee3 {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-100%); }
+}
+
+/* Container styling for marquee animations */
+.tableAnimation-container1,
+.tableAnimation-container2,
+.tableAnimation-container3 {
+	width: 100%; /* Full width of the container */
+	overflow: hidden; /* Hide overflowing content */
+	display: flex; /* Flex display for horizontal alignment */
+}
+
+/* Marquee content with different animation speeds and directions */
+.tableAnimation-contentA1 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee1 50s linear infinite; /* Animation with marquee1 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+.tableAnimation-contentA2 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee2 50s linear infinite; /* Animation with marquee2 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+.tableAnimation-contentA3 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee3 50s linear infinite; /* Animation with marquee3 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+.tableAnimation-contentB1 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee1 20s linear infinite; /* Faster animation with marquee1 keyframes */
+}
+
+.tableAnimation-contentB2 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee2 20s linear infinite; /* Faster animation with marquee2 keyframes */
+}
+
+.tableAnimation-contentB3 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee3 20s linear infinite; /* Faster animation with marquee3 keyframes */
+}
+
+.tableAnimation-contentC1 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee1 1200s linear infinite; /* Very slow animation with marquee1 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+.tableAnimation-contentC2 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee2 1200s linear infinite; /* Very slow animation with marquee2 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+.tableAnimation-contentC3 {
+	white-space: nowrap; /* Prevent text wrapping */
+	display: inline-block; /* Inline-block for horizontal scrolling */
+	animation: marquee3 1200s linear infinite; /* Very slow animation with marquee3 keyframes */
+	animation-direction: reverse; /* Reverse direction for animation */
+}
+
+/* Styling for images inside tableAnimation-container3 */
+.tableAnimation-container3 table tr td img {
+	margin: 15px 10px; /* Margin around images */
+	width: 300px; /* Width of images */
+	height: 300px; /* Height of images */
+}
+
+/* Styling for images inside tableAnimation-container2 */
+.tableAnimation-container2 table tr td img {
+	margin: 15px 10px; /* Margin around images */
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8), 0 10px 10px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+	width: 274px; /* Width of images */
+	height: 444px; /* Height of images */
+}
+
+/* Styling for NowOnSale section */
+.NowOnSale {
+	font-size: 50px; /* Font size for text */
+	-webkit-text-stroke-color: gold; /* Text stroke color */
+	-webkit-text-stroke-width: 1px; /* Text stroke width */
+	text-align: center; /* Center alignment for text */
+	height: 600px; /* Height of the section */
+	background-image: 
+	linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), /* Overlay gradient */
+	url(Images/Background2.png); /* Background image */
+	background-size: 100% 100%; /* Background image size */
+}
